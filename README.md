@@ -1,10 +1,10 @@
-# Codemotion - ProtectHer AI Challenge
+# Guida IBM per la challenge
 
 Repository per l'utilizzo di strumenti di AI su IBM Watsonx.
 
 * Per poter pubblicare un applicazione FrontEnd/Backend sul web puoi seguire la guida per [Code Engine](#Code-Engine)
 * Per poter creare un flusso di AI generativa Low Code-No Code, caricare docuemnti in un vectorDB puoi seguire la guida [Langflow AstraDB](#langflow-astradb)
-* Per poter usare un flusso di agenti AI con strumenti avanzati puoi seguire la guida [#IBM-watsonx-Orchestrate](#ibm-watsonx-orchestrate)
+* Per poter usare un flusso di agenti AI con strumenti avanzati puoi seguire la guida [IBM-watsonx-Orchestrate](#ibm-watsonx-orchestrate)
 
 ## Code Engine
 Code Engine è il container engine con cui è possibile deployare applicazioni in container sulla piattaforma IBM. Seguite la guida [code-engine-upload-guide.md](code-engine-upload-guide.md) per poter pubblicare le vostre applicazioni sul web.
