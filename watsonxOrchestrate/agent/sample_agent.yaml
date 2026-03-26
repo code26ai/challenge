@@ -1,0 +1,88 @@
+kind: native
+name: sample_agent
+display_name: SafetyAgent
+description: Questo agente fornisce supporto e informazioni su diritti, protezioni
+  legali e risorse disponibili per la prevenzione e il contrasto della violenza di
+  genere, basandosi su leggi italiane e normative di tutela.
+context_access_enabled: true
+context_variables: []
+restrictions: editable
+supported_apps: []
+llm: groq/openai/gpt-oss-120b
+style: default
+hide_reasoning: false
+instructions: |-
+  Sei un assistente specializzato nel supporto contro la violenza di genere.
+  Sei empatico, rispettoso e fornisci informazioni chiare e utili.
+  Conosci le leggi italiane relative alla protezione delle vittime di violenza.
+  Rispondi all'utente in modo sensibile, comprensivo e non giudicante.
+  Fornisci informazioni su diritti legali, misure di protezione e risorse disponibili.
+  Rispondi sempre nella stessa lingua dell'utente.
+  In caso di emergenza, ricorda sempre di suggerire di contattare il 1522 (numero antiviolenza) o il 112.
+guidelines: []
+collaborators: []
+tools:
+- get_support_services
+toolkits: []
+plugins:
+  agent_pre_invoke: []
+  agent_post_invoke: []
+knowledge_base:
+- Violence_Prevention_Laws_73102b
+chat_with_docs:
+  enabled: false
+  supports_full_document: true
+  vector_index:
+    chunk_size: 400
+    chunk_overlap: 50
+    limit: 10
+    extraction_strategy: express
+  generation:
+    prompt_instruction: ''
+    max_docs_passed_to_llm: 5
+    generated_response_length: Moderate
+    display_text_no_results_found: I searched my knowledge base, but did not find
+      anything related to your query
+    display_text_connectivity_issue: I might have information related to your query
+      to share, but am unable to connect to my knowledge base at the moment
+    idk_message: I'm afraid I don't understand. Please rephrase your question.
+    enabled: false
+  query_rewrite:
+    enabled: true
+  confidence_thresholds:
+    retrieval_confidence_threshold: Lowest
+    response_confidence_threshold: Lowest
+  citations:
+    citation_title: How do we know?
+    citations_shown: -1
+  hap_filtering:
+    output:
+      enabled: false
+      threshold: 0.5
+  query_source: Agent
+  agent_query_description: The query to search for in the knowledge base
+starter_prompts:
+  is_default_prompts: false
+  prompts:
+  - id: default0
+    title: What can you do for me?
+    subtitle: Learn about watsonx Orchestrate AI Agent and Gen AI capabilities
+    prompt: Summarize the capabilities of watsonx Orchestrate.
+    state: active
+  - id: default1
+    title: Formalize Message
+    subtitle: Craft more professional messages
+    prompt: Please revise the text in the following prompt to improve clarity and
+      brevity, while preserving all essential information.
+    state: active
+  - id: default2
+    title: Summarize Meeting Notes
+    subtitle: Bullet key points from meeting notes
+    prompt: Create a bulleted summary highlighting key points from the meeting notes
+      sent in the next prompt.
+    state: active
+welcome_content:
+  welcome_message: Hello, welcome to watsonx Orchestrate
+  description: Accuracy of generated answers may vary. Please double-check responses.
+  is_default_message: false
+spec_version: v1
