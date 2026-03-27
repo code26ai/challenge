@@ -3,7 +3,7 @@
 
 Questa guida ti accompagnerà passo dopo passo nella creazione di un sistema RAG (Retrieval-Augmented Generation) completo utilizzando Langflow e AstraDB di DataStax.
 
----
+Nota: Per procedere con embedding dei documenti e utilizzo dei modelli LLM, **richiedi un apikey watsonx ai tutor IBM**
 
 ## 📋 Indice
 

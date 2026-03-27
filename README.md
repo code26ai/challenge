@@ -3,7 +3,7 @@
 Repository per l'utilizzo di strumenti di AI su IBM Watsonx.
 
 * Per poter pubblicare un applicazione FrontEnd/Backend sul web puoi seguire la guida per [Code Engine](#Code-Engine)
-* Per poter creare un flusso di AI generativa Low Code-No Code, caricare docuemnti in un vectorDB puoi seguire la guida [Langflow AstraDB](#langflow-astradb)
+* Per poter creare un flusso di AI generativa Low Code-No Code, caricare documenti in un vectorDB puoi seguire la guida [Langflow AstraDB](#langflow-astradb)
 * Per poter usare un flusso di agenti AI con strumenti avanzati puoi seguire la guida [IBM-watsonx-Orchestrate](#ibm-watsonx-orchestrate)
 
 ## Code Engine
@@ -25,7 +25,7 @@ Nota: l'utilizzo dei modelli LLM per la creazione di agenti e per l'embedding de
 Questa repo contiene materiale per utilizzare **IBM watsonx Orchestrate** nella vostra soluzione:
 
 - [Tutorial base](watsonxOrchestrate/README.md)
-- [Uso di Tool python](watsonxOrchestrate/)
+- [Uso di Tool python](watsonxOrchestrate/OrchestrateAdvanced.md)
 - [Configurazioni parametri per le integrazioni](watsonxOrchestrate/ApprofondimentoConnections.md)
 
 [Link alla guida IBM Orchstrate](watsonxOrchestrate/README.md)

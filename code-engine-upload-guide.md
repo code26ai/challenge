@@ -12,7 +12,7 @@ Questo processo di deployment su IBM Cloud Code Engine si articola in tre fasi p
 
 Il flusso completo garantisce che l'applicazione containerizzata venga correttamente costruita, archiviata nel registry cloud, e deployata come applicazione serverless su Code Engine.
 
-## Prerequisites
+## Prerequisiti
 
 - Podman/Docker installato
 - Accesso a IBM Cloud attraverso un IBM-id 
@@ -40,6 +40,7 @@ In caso di uso tramite pipeline automatizzate, script e ambienti CI/CD è possib
 ```bash
 ibmcloud login --apikey <your-api-key>
 ```
+Per generare un apikey seguire [questo](#91-crea-una-api-key) step
 
 ## Step 2: Resource Group Selection
 

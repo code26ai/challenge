@@ -48,7 +48,7 @@ Segui queste istruzioni se prevedi di utilizzare l'ADK:
 
 - Attiva l' ambiente con la CLI dell’ADK utilizzando le varidabili di ambiente salvate nel `.env`.
 
-Recupera l'*service-instance-url* dalla schermata di IBM Cloud relativa all'embiente Orchestrate
+Recupera l'**service-instance-url** dalla schermata di IBM Cloud relativa all'embiente Orchestrate
 
 ![Add env](images/tool-env-orchestrate.png)
 ```
@@ -104,9 +104,7 @@ potrai scegliere tra 3 diversi tipi di agenti:
 3. agenti esterni, in questo caso si presentano tre opzioni: 
 ![type agent](images/type-agent.png)
 
-External agent: Aggiungi agenti da piattaforme di terze parti. Per importare agenti da langflow segui la guida 
-[Langflow Agents](./Langflow_Agents.md).
-Per tutti gli altri tipi di agente segui la guida [Agents](./Agents.md).
+External agent: Aggiungi agenti da piattaforme di terze parti come Langflow o altri Agenti esterni.
 
 IBM watsonx Orchestrate assistant (gli assistenti sono versioni precedenti e deterministiche degli agenti):
 aggiungi un assistant pubblicato da IBM watsonx Orchestrate.
