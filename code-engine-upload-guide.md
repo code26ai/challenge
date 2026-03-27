@@ -15,7 +15,8 @@ Il flusso completo garantisce che l'applicazione containerizzata venga correttam
 ## Prerequisiti
 
 - Podman/Docker installato
-- Accesso a IBM Cloud attraverso un IBM-id 
+- Accesso a IBM Cloud attraverso un IBM-id
+- Richiedere ai tutor IBM accesso all'ambiente comunicando il proprio IBM-id e selezionare l'account IBM Cloud comunicato dai tutor
 
 [LINK per poter richiedere un IBM-id](https://www.ibm.com/account/reg/it-it/signup?formid=urx-19776)
 
@@ -27,12 +28,12 @@ Esistono due metodi principali per potersi autenticare:
 
 ### Metodo 1: SSO (Single Sign-On) - Uso Interattivo
 
-Ideale per uso manuale e sviluppo locale. Apre il browser per l'autenticazione:
+Per autenticarsi tramite CLI, dal terminale, digitare il comando ed prire il browser per l'autenticazione:
 
 ```bash
 ibmcloud login --sso
 ```
-
+**NOTA: Selezionare l'account IBM Cloud comunicato dal tutor**
 ### Metodo 2: API Key - Automazione e CI/CD
 
 In caso di uso tramite pipeline automatizzate, script e ambienti CI/CD è possibile utilizzare un autenticazione tramite API key, passando la chiave direttamente nel comando:
@@ -138,8 +139,10 @@ Lista i namespace esistenti:
 ```bash
 ibmcloud cr namespace-list
 ```
+Dal comando precedente, recuperare il namespace
 
-Se non hai namespace o vuoi crearne uno nuovo:
+
+(Optional)Se non hai namespace o vuoi crearne uno nuovo:
 
 ```bash
 ibmcloud cr namespace-add <namespace-name>
