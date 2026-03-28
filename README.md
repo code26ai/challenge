@@ -32,7 +32,31 @@ Questa repo contiene materiale per utilizzare **IBM watsonx Orchestrate** nella 
 
 ## Esempi di chiamate API
 * [Esempio per generare Bearer Token con APIKEY](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/wx-api-credentials.html?context=wx&audience=wdp&locale=en)
+```bash
+curl -X POST --url https://iam.cloud.ibm.com/identity/token --header "Content-Type: application/x-www-form-urlencoded" --data "grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=${APIKEY}"
+```
 
 * [Esempio di chiamata API per chiamare modelli watsonx.ai](https://www.ibm.com/watsonx/developer/capabilities/chat/)
-
+```bash
+curl 'https://<region>.ml.cloud.ibm.com/ml/v1/text/chat?version=2023-05-29' -H 'Content-Type: application/json' -H 'Accept: application/json' -H "Authorization: Bearer $BEARER" \
+  -d '{
+        "messages": [
+                {
+                        "role": "user",
+                        "content": [
+                                {
+                                        "type": "text",
+                                        "text": "Sample"
+                                }
+                        ]
+                }
+        ],
+        "project_id": "<project_id>",
+        "model_id": "<model_name>"
+}'
+```
 * [Esempio di chiamata API per chiamare agenti su watsonx.orchestrate](https://heidloff.net/article/watsonx-orchestrate-apis/)
+
+```bash
+curl -X POST --url https://api.<region>.watson-orchestrate.cloud.ibm.com/instances/<orchestrate_id>/v1/orchestrate/<agent_id>/chat/completions --header "Authorization: Bearer $BEARER" --header 'Content-Type: application/json' --data '{ "stream":false,"messages": [{"role": "user","content": "Hi"}]}'
+```
