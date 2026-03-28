@@ -31,6 +31,7 @@ Questa repo contiene materiale per utilizzare **IBM watsonx Orchestrate** nella 
 [Link alla guida IBM Orchstrate](watsonxOrchestrate/README.md)
 
 ## Esempi di chiamate API
+* [Esempio per generare Bearer Token con APIKEY](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/wx-api-credentials.html?context=wx&audience=wdp&locale=en)
 
 * [Esempio di chiamata API per chiamare modelli watsonx.ai](https://www.ibm.com/watsonx/developer/capabilities/chat/)
 
