@@ -29,3 +29,9 @@ Questa repo contiene materiale per utilizzare **IBM watsonx Orchestrate** nella 
 - [Configurazioni parametri per le integrazioni](watsonxOrchestrate/ApprofondimentoConnections.md)
 
 [Link alla guida IBM Orchstrate](watsonxOrchestrate/README.md)
+
+## Esempi di chiamate API
+
+* [Esempio di chiamata API per chiamare modelli watsonx.ai](https://www.ibm.com/watsonx/developer/capabilities/chat/)
+
+* [Esempio di chiamata API per chiamare agenti su watsonx.orchestrate](https://heidloff.net/article/watsonx-orchestrate-apis/)
